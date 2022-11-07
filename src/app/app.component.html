@@ -1,0 +1,23 @@
+<div class="conteudo">
+  <h1 class="titulo">JOGO DA VELHA</h1>
+  <div class="textos">
+    <h2 class="vezJogador">Jogador atual = {{jogadorAtual}}</h2>
+    <h3 class="placar"> <b>X</b> = {{placarX}} | {{placarO}} = <b>O</b></h3>
+  </div>
+
+  <div class="vencedor" *ngIf="winner != ''"> # <b>Vencedor:</b> {{winner}} #</div>
+
+  <ul class="painel">
+    <ol><button class="botao" (click)="botao1()">{{um}}</button></ol>
+    <ol><button class="botao" (click)="botao2()">{{dois}}</button></ol>
+    <ol><button class="botao" (click)="botao3()">{{tres}}</button></ol>
+    <ol><button class="botao" (click)="botao4()">{{quatro}}</button></ol>
+    <ol><button class="botao" (click)="botao5()">{{cinco}}</button></ol>
+    <ol><button class="botao" (click)="botao6()">{{seis}}</button></ol>
+    <ol><button class="botao" (click)="botao7()">{{sete}}</button></ol>
+    <ol><button class="botao" (click)="botao8()">{{oito}}</button></ol>
+    <ol><button class="botao" (click)="botao9()">{{nove}}</button></ol>
+  </ul>
+
+  <button class="limpar" (click)="limpar()">RECOMEÇAR</button>
+</div>
